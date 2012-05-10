@@ -31,6 +31,8 @@ map <Leader>cw <esc>:cw<cr>
 map <C-F6> <esc>:cn<cr>
 map <C-F7> <esc>:cp<cr>
 
+map <Leader>sh <esc>:shell<cr>
+
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
