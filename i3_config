@@ -203,3 +203,4 @@ assign [class="Skype"] chat
 exec wicd-client
 exec gnome-power-manager
 exec conky -d
+xsetbg -fullscreen -border black /home/losciamano/Scaricati/71399.jpg 
