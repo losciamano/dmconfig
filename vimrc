@@ -27,9 +27,7 @@ endf
 command! -nargs=* Make | let $mkpath=SetMkfile() | make <args> $makejarg -C $mkpath | cwindow 5 
 
 map <Leader>mk <esc>:Make<cr>
-map <Leader>cw <esc>:cw<cr>
-map <C-F6> <esc>:cn<cr>
-map <C-F7> <esc>:cp<cr>
+map <C-F7> <esc>:NERDTreeToggle<cr>
 
 map <Leader>sh <esc>:shell<cr>
 
