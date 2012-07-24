@@ -117,7 +117,7 @@ bindsym $mod+Shift+R restart
 bindsym $mod+Shift+E exit
 
 #lock screen
-bindsym Mod1+Control+l exec slock
+bindsym Mod1+Control+l exec "i3lock -c 000000"
 
 #volume control
 bindsym $mod+F1 exec "amixer -c 0 set Master 0"
@@ -201,5 +201,4 @@ assign [class="Skype"] chat
 
 #exec google-chrome
 exec wicd-client
-exec gnome-power-manager
-exec conky -d
+#exec gnome-power-manager
