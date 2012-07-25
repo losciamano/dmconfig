@@ -202,5 +202,5 @@ assign [class="Skype"] chat
 #exec google-chrome
 exec wicd-client
 #exec gnome-power-manager
+exec xsetbg -fullscreen -border black /home/losciamano/current_bg
 exec conky -d
-exec "xsetbg -fullscreen -border black /home/losciamano/current_bg"
