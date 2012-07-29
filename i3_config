@@ -204,3 +204,7 @@ exec wicd-client
 #exec gnome-power-manager
 exec xsetbg -fullscreen -border black /home/losciamano/current_bg
 exec conky -d
+exec /usr/bin/gnome-keyring-daemon --start --components=gpg
+exec /usr/bin/gnome-keyring-daemon --start --components=pkcs11
+exec /usr/bin/gnome-keyring-daemon --start --components=secrets
+exec /usr/bin/gnome-keyring-daemon --start --components=ssh
