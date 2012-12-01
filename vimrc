@@ -1,3 +1,9 @@
+syntax on
+set background=dark
+set showcmd
+set showmatch
+set mouse=a
+
 set number
 set autoindent
 
@@ -31,10 +37,18 @@ map <C-F7> <esc>:NERDTreeToggle<cr>
 
 map <Leader>sh <esc>:shell<cr>
 
+let g:lasttab = 1
+nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
+
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType c set omnifunc=ccomplete#Complete
+autocmd FileType cpp set omnifunc=ccomplete#Complete
+
+" highlight if 80 char per line is exceeded
+autocmd FileType cpp highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+autocmd FileType cpp match OverLength /\%81v.\+/
